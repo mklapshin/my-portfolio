@@ -1,0 +1,52 @@
+<template>
+  <div class="content">
+    <h1 class="header1">Удовлетворенность по параметрам, %</h1>
+    <div class="comments">
+      <div class="comment-line">
+        {{ slideBody["matrix"]["Row152"]["Col1"] }}
+      </div>
+      <br />
+      <div class="comment-line">
+        {{ slideBody["matrix"]["Row153"]["Col1"] }}
+      </div>
+      <br />
+      <div class="comment-line">
+        {{ slideBody["matrix"]["Row154"]["Col1"] }}
+      </div>
+      <br />
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: ["slideBody"],
+};
+</script>
+
+<style scoped>
+/*@import "@/assets/scss/main.scss";*/
+.content {
+  font-family: Inter;
+  width: 100%;
+  margin: 45px 0 10px 10px;
+  text-align: left;
+}
+
+.header1 {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+}
+
+.comments {
+  width: 100%;
+  /*height: 40px;*/
+  margin: 17px 0 0 0;
+  font-size: 14px;
+  line-height: 12px;
+}
+</style>
+ 
